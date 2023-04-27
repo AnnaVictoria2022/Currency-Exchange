@@ -1,0 +1,129 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1622662124723-5c60aafebd4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    
+
+}
+h1{
+    font-size: 100px;
+    color: black;
+    text-shadow: 5px 2px white;
+    margin-bottom: 4px;
+}
+.currencies{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(100, 128, 166, 0.3);
+}
+.from{
+    display: flex;
+    padding:20px;
+}
+.to{
+    display: flex;
+    padding:20px;
+}
+.currencyFrom{
+    padding:20px;
+    margin:20px;
+    width:40%;
+    font-size: 20px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0%;
+}
+.fromAmount{
+    padding:20px;
+    margin:20px;
+    width:40%;
+    font-size: 20px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0%;
+}
+.currencyTo{
+    padding:20px;
+    margin:20px;
+    width:40%;
+    font-size: 20px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 0%;
+}
+.toAmount{
+    padding:20px;
+    margin:20px;
+    background-color: white;
+    width:40%;
+    border:1px solid black;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+}
+.btnConvert, .btnReset{
+    background-color:#77dd77;
+    padding:20px;
+    font-size: 20px;
+    border:1px solid white;
+    text-transform: uppercase;
+    width:30%;
+    margin:20px;
+    border-radius: 20px;
+}
+
+@media all and (max-width:850px){
+    h1{
+        font-size: 70px;
+        margin-top:100px;
+    }
+    .currencies{
+        margin-top:50px;
+    }
+}
+
+@media all and (max-width:600px){
+
+    body{
+        background-image: url("https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+        background-position:center;
+    }
+    h1{
+        font-size: 35px;
+        margin-top: 50px;
+        color:black;
+        text-shadow: 3px 2px white;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .btnConvert, .btnReset{
+        width:40%;
+        background-color: #00cccc;
+    }
+    .fromAmount, .toAmount{
+        width:40%;
+        font-size: 15px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .currencyFrom, .currencyTo{
+        width:50%;
+        font-size: 15px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
